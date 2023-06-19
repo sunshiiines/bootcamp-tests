@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+    <title>Mocha Tests</title>
+</head>
+
+<body>
+    <h1>Unit Testing Using MochaJS</h1>
+    <!-- -->
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
+
+    <script src="countAllFromTown.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/countAllFromTown.tests.js"></script>
+
+    <script src="countAllPaarl.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/countAllPaarl.tests.js"></script>
+
+    <script src="countRegNumbers.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/countRegNumbers.tests.js"></script>
+
+    <script src="findItemsOver.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/findItemsOver.tests.js"></script>
+
+    <script src="findItemsOver20.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/findItemsOver20.tests.js"></script>
+
+    <script src="fromWhere.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/fromWhere.tests.js"></script>
+
+    <!-- the function to be tested -->
+    <script src="greet.js" charset="utf-8"></script>
+    <!-- followed by the tests -->
+    <script src="bootcamp-tests/greet.tests.js" charset="utf-8"></script>
+
+    <script src="isFrom.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/isFrom.tests.js"></script>
+
+    <script src="isFromBellville.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/isFromBellville.tests.js"></script>
+
+    <script src="isWeekday.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/isWeekday.tests.js"></script>
+
+    <script src="mostProfitableDepartment.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/mostProfitableDepartment.tests.js"></script>
+
+    <script src="regCheck.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/regCheck.tests.js"></script>
+
+    <script src="totalPhoneBill.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/totalPhoneBill.tests.js"></script>
+
+    <script src="transportFee.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/transportFee.tests.js"></script>
+
+    <script src="yearsAgo.js" charset="utf-8"></script>
+    <script src="bootcamp-tests/yearsAgo.tests.js"></script>
+    
+    <script>
+        // configure and run mocha
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+    
+</body>
+
+</html>
